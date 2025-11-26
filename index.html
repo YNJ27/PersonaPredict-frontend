@@ -1,0 +1,55 @@
+<!doctype html>
+<!--
+  BEAUTIFIED VERSION OF PERSONAPREDICTOR HTML
+  Main changes: Enhanced meta tags, added Google Fonts, improved structure
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- CHANGE: Enhanced title -->
+    <title>PersonaPredictor - Discover Your Personality Type</title>
+    
+    <!-- CHANGE: Improved viewport meta for better mobile experience -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    
+    <!-- CHANGE: Added meta description for SEO -->
+    <meta name="description" content="Discover your personality type with AI-powered analysis. Take our quick survey and find out if you're an introvert or extrovert." />
+    
+    <!-- CHANGE: Added theme color for better mobile experience -->
+    <meta name="theme-color" content="#667eea" />
+    
+    <!-- CHANGE: Added Google Fonts for better typography (Inter font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- CHANGE: Added CSS reset for consistent rendering across browsers -->
+    <style>
+      /* Minimal CSS reset to ensure consistent full-screen rendering */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html, body {
+        height: 100%;
+        overflow-x: hidden;
+      }
+      
+      #root {
+        min-height: 100vh;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- React will mount into this div -->
+    <!-- CHANGE: Root div now ensures full-height rendering -->
+    <div id="root"></div>
+    
+    <!-- Vite injects the compiled JS starting from main.jsx -->
+    <!-- CHANGE: Module type ensures modern JavaScript support -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
