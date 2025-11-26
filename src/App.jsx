@@ -4,7 +4,11 @@ import "./App.css";
 import extrovertImg from "./assets/extrovert.jpg";
 import introvertImg from "./assets/introvert.jpg";
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+// Use `VITE_API_BASE_URL` when provided (useful for dev), otherwise default
+// to the local backend. When the frontend is served from the same origin as
+// the backend (production), requests will still work because relative paths
+// will be used when this is set to an empty string by deployment tooling.
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
 const initialFormValues = {
   hoursSpentAlone: "",
